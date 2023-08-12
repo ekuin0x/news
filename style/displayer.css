@@ -1,0 +1,151 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+    margin: 0;
+}
+
+* {
+  position: relative;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed';
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.navbar{
+  background-color: rgb(236, 236, 236);
+}
+
+.navbar-brand{
+  background-color: rgb(51, 51, 51);
+  color: white !important;
+  padding: 8px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+  
+
+  #wrapper{
+      padding: 0px 5px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+  }
+
+  #news-wrapper{
+      width: 100%;
+      height: fit-content;
+      padding: 30px 15px;
+  }
+
+  
+  #news-wrapper #main-img{
+      width: 100%;
+      height: 60vw;
+  }
+
+
+  #horizontal-banner{
+    position: fixed;
+    bottom: 0;
+    z-index: 555;
+    width: 100vw ;
+    height: 138px;
+    margin: 0;
+    left: 0;
+  }
+
+  #news-wrapper #title{
+      width: 100%;
+      font-size: 22px;
+      font-weight: bold;
+      font-family: 'Newsreader';
+      line-height: 33px;
+  }
+  
+  #news-wrapper i{
+      padding: 0px 10px;
+      left: -10px;
+      font-weight: bold;
+  }
+  
+  
+  #news-wrapper #content{
+      width: 100%;
+      font-size: 17px;
+      line-height:28px;
+      padding: 12px ;
+      font-family: 'Newsreader';
+      font-weight: bold;
+      background-color: rgb(252, 252, 252);
+      color: rgb(59, 59, 59);
+      margin: 15px 0;
+
+  }
+
+  #side-banners-wrapper{
+    display: none;
+    }
+
+@media screen and (min-width : 760px) {
+  
+  #wrapper {
+    min-width: 1300px;
+    flex-direction: row;
+    padding: 25px 10px 40px 25px ;
+    }
+
+  #news-wrapper{
+    width: calc(100% - 300px);
+  }
+
+  #horizontal-banner{
+    width: 760px ;
+    height: 168px;
+    position: relative;
+    margin: 0px auto 35px auto;
+  }
+
+
+  #news-wrapper #title{
+    font-size: 23px;
+  }
+
+  #news-wrapper #main-img{
+    width: 450px;
+    height: 320px;
+    border-radius: 10px;
+}
+
+  #news-wrapper #content{
+            
+    padding: 10px;
+    font-size: 17px;
+    line-height: 32px;
+    font-family: 'Newsreader';
+    font-weight: bold;
+    border: none;
+    }
+
+    #side-banners-wrapper{
+      height: fit-content;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #side-banners-wrapper img{
+      height: 680px;
+      width: 180px;
+    }
+
+}
